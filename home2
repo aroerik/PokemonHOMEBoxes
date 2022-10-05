@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		table, th, td {		
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+	
+		</style>
+	</head>
+	<body>
+    <table>
+			<caption>HOME 2: 1-30</caption>
+			<tbody>
+				<tr align="center">
+					<td width="50">1</td>
+					<td width="150">bulbasaur</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png" width="50" height="50">
+					</td>
+					<td width="50">2</td>
+					<td width="150">ivysaur</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/2.png" width="50" height="50">
+					</td>
+					<td width="50">3</td>
+					<td width="150">venusaur</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/3.png" width="50" height="50">
+					</td>
+					<td width="50">4</td>
+					<td width="150">charmander</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/4.png" width="50" height="50">
+					</td>
+					<td width="50">5</td>
+					<td width="150">charmeleon</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/5.png" width="50" height="50">
+					</td>
+					<td width="50">6</td>
+					<td width="150">charizard</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/6.png" width="50" height="50">
+					</td>
+				</tr>
+				<tr align="center">
+					<td width="50">7</td>
+					<td width="150">squirtle</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png" width="50" height="50">
+					</td>
+					<td width="50">8</td>
+					<td width="150">wartortle</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/8.png" width="50" height="50">
+					</td>
+					<td width="50">9</td>
+					<td width="150">blastoise</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/9.png" width="50" height="50">
+					</td>
+					<td width="50">10</td>
+					<td width="150">caterpie</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10.png" width="50" height="50">
+					</td>
+					<td width="50">11</td>
+					<td width="150">metapod</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/11.png" width="50" height="50">
+					</td>
+					<td width="50">12</td>
+					<td width="150">butterfree</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/12.png" width="50" height="50">
+					</td>
+				</tr>
+				<tr align="center">
+					<td width="50">13</td>
+					<td width="150">weedle</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/13.png" width="50" height="50">
+					</td>
+					<td width="50">14</td>
+					<td width="150">kakuna</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/14.png" width="50" height="50">
+					</td>
+					<td width="50">15</td>
+					<td width="150">beedrill</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/15.png" width="50" height="50">
+					</td>
+					<td width="50">16</td>
+					<td width="150">pidgey</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/16.png" width="50" height="50">
+					</td>
+					<td width="50">17</td>
+					<td width="150">pidgeotto</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/17.png" width="50" height="50">
+					</td>
+					<td width="50">18</td>
+					<td width="150">pidgeot</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/18.png" width="50" height="50">
+					</td>
+				</tr>
+				<tr align="center">
+					<td width="50">19</td>
+					<td width="150">rattata</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/19.png" width="50" height="50">
+					</td>
+					<td width="50">20</td>
+					<td width="150">raticate</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/20.png" width="50" height="50">
+					</td>
+					<td width="50">21</td>
+					<td width="150">spearow</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/21.png" width="50" height="50">
+					</td>
+					<td width="50">22</td>
+					<td width="150">fearow</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/22.png" width="50" height="50">
+					</td>
+					<td width="50">23</td>
+					<td width="150">ekans</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/23.png" width="50" height="50">
+					</td>
+					<td width="50">24</td>
+					<td width="150">arbok</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/24.png" width="50" height="50">
+					</td>
+				</tr>
+				<tr align="center">
+					<td width="50">25</td>
+					<td width="150">pikachu</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png" width="50" height="50">
+					</td>
+					<td width="50">26</td>
+					<td width="150">raichu</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/26.png" width="50" height="50">
+					</td>
+					<td width="50">27</td>
+					<td width="150">sandshrew</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/27.png" width="50" height="50">
+					</td>
+					<td width="50">28</td>
+					<td width="150">sandslash</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/28.png" width="50" height="50">
+					</td>
+					<td width="50">29</td>
+					<td width="150">nidoran♀</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/29.png" width="50" height="50">
+					</td>
+					<td width="50">30</td>
+					<td width="150">nidorina</td>
+					<td width="50">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/30.png" width="50" height="50">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+   </body>
+</html>
