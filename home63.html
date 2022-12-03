@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			* {box-sizing: border-box;}
+			
+			table, th, td {		
+				border: 2px solid black;
+				border-collapse: collapse;
+			}
+
+			#dex {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				height: 300px;
+				width; 100px;
+				overflow: scroll;
+			}
+			#dexInput {
+				padding: 0;
+				width: 15%;
+			}
+		</style>
+		<script>
+			function goToNewPage() {
+				var url = document.getElementById('list').value;
+				if(url != 'none') {
+					window.location = url;
+				}
+			}
+			
+			function goHome() {window.location = "index.html";}
+			
+			function goNext() {window.location = "home64.html";}
+			
+			function goPrev() {window.location = "home62.html";}
+			
+			function myFunction() {
+				var input, filter, ul, li, a, i, txtValue;
+				input = document.getElementById("myInput");
+				filter = input.value.toUpperCase();
+				ul = document.getElementById("dex");
+				li = ul.getElementsByTagName("li");
+				for (i = 0; i < li.length; i++) {
+					a = li[i].getElementsByTagName("a")[0];
+					txtValue = a.textContent || a.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						li[i].style.display = "";
+					} else {
+						li[i].style.display = "none";
+					}
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+		<!-- Navigation -->
+		<form>
+			<button type="button" onclick="goHome()">HOME</button>
+			<button type="button" onclick="goPrev()">PREV</button>
+			<select name="boxes" id="list" accesskey="target">
+				<option value='none' selected>Pok&eacute;mon HOME Boxes...</option>
+				<option value="home1.html">1: Move Box</option>
+				<option value="home2.html">2: 1-30</option>
+				<option value="home3.html">3: Shiny 1-30</option>
+				<option value="home4.html">4: 31-60</option>
+				<option value="home5.html">5: Shiny 31-60</option>
+				<option value="home6.html">6: 61-90</option>
+				<option value="home7.html">7: Shiny 61-90</option>
+				<option value="home8.html">8: 91-120</option>
+				<option value="home9.html">9: Shiny 91-120</option>
+				<option value="home10.html">10: 121-150</option>
+				<option value="home11.html">11: Shiny 121-150</option>
+				<option value="home12.html">12: 151-180</option>
+				<option value="home13.html">13: Shiny 151-180</option>
+				<option value="home14.html">14: 181-210</option>
+				<option value="home15.html">15: Shiny 181-210</option>
+				<option value="home16.html">16: 211-240</option>
+				<option value="home17.html">17: Shiny 211-240</option>
+				<option value="home18.html">18: 241-270</option>
+				<option value="home19.html">19: Shiny 241-270</option>
+				<option value="home20.html">20: 271-300</option>
+				<option value="home21.html">21: Shiny 271-300</option>
+				<option value="home22.html">22: 301-330</option>
+				<option value="home23.html">23: Shiny 301-330</option>
+				<option value="home24.html">24: 331-360</option>
+				<option value="home25.html">25: Shiny 331-360</option>
+				<option value="home26.html">26: 361-390</option>
+				<option value="home27.html">27: Shiny 361-390</option>
+				<option value="home28.html">28: 391-420</option>
+				<option value="home29.html">29: Shiny 391-420</option>
+				<option value="home30.html">30: 421-450</option>
+				<option value="home31.html">31: Shiny 421-450</option>
+				<option value="home32.html">32: 451-480</option>
+				<option value="home33.html">33: Shiny 451-480</option>
+				<option value="home34.html">34: 481-510</option>
+				<option value="home35.html">35: Shiny 481-510</option>
+				<option value="home36.html">36: 511-540</option>
+				<option value="home37.html">37: Shiny 511-540</option>
+				<option value="home38.html">38: 541-570</option>
+				<option value="home39.html">39: Shiny 541-570</option>
+				<option value="home40.html">40: 571-600</option>
+				<option value="home41.html">41: Shiny 571-600</option>
+				<option value="home42.html">42: 601-630</option>
+				<option value="home43.html">43: Shiny 601-630</option>
+				<option value="home44.html">44: 631-660</option>
+				<option value="home45.html">45: Shiny 631-660</option>
+				<option value="home46.html">46: 661-690</option>
+				<option value="home47.html">47: Shiny 661-690</option>
+				<option value="home48.html">48: 691-720</option>
+				<option value="home49.html">49: Shiny 691-720</option>
+				<option value="home50.html">50: 721-750</option>
+				<option value="home51.html">51: Shiny 721-750</option>
+				<option value="home52.html">52: 751-780</option>
+				<option value="home53.html">53: Shiny 751-780</option>
+				<option value="home54.html">54: 781-810</option>
+				<option value="home55.html">55: Shiny 781-810</option>
+				<option value="home56.html">56: 811-840</option>
+				<option value="home57.html">57: Shiny 811-840</option>
+				<option value="home58.html">58: 841-870</option>
+				<option value="home59.html">59: Shiny 841-870</option>
+				<option value="home60.html">60: 871-900</option>
+				<option value="home61.html">61: Shiny 871-900</option>
+				<option value="home62.html">62: 901-930</option>
+				<option value="home63.html">63: Shiny 901-930</option>
+				<option value="home64.html">64: 931-960</option>
+				<option value="home65.html">65: Shiny 931-960</option>
+				<option value="home66.html">66: 961-990</option>
+				<option value="home67.html">67: Shiny 961-990</option>
+				<option value="home68.html">68: 991-1020</option>
+				<option value="home69.html">69: Shiny 991-1020</option>
+				
+				<optgroup label="Empty Boxes">
+					<option value="homeNULL.html">70-167: Empty</option>
+				</optgroup>
+
+				<optgroup label="Regionals and Variants">
+					<option value="home179.html">168: S. Variants 3</option>
+					<option value="home179.html">169: Variants 3</option>
+					<option value="home179.html">170: S. Variants 2</option>
+					<option value="home179.html">171: Variants 2</option>
+					<option value="home179.html">172: S. Variants 1</option>
+					<option value="home179.html">173: Variants 1</option>
+
+					<option value="home179.html">174: Shiny Alcremie</option>
+					<option value="home179.html">175: Shiny Alcremie</option>
+					<option value="home179.html">176: Alcremie + Shiny</option>
+					<option value="home179.html">177: Alcremie</option>
+					<option value="home179.html">178: Alcremie</option>
+
+					<option value="home179.html">179: Shiny Vivillon</option>
+					<option value="home180.html">180: Vivillon</option>
+
+					<option value="home181.html">181: Shiny Unown</option>
+					<option value="home182.html">182: Unown</option>
+
+					<option value="home183.html">183: S. Hisui+Paldea</option>
+					<option value="home184.html">184: Hisui+Paldea</option>
+
+					<option value="home185.html">185: Shiny Galar</option>
+					<option value="home186.html">186: Galar</option>
+
+					<option value="home187.html">187: Shiny Alola</option>
+					<option value="home188.html">188: Alola</option>
+				</optgroup>
+
+				<optgroup label="LGPE">
+					<option value="home189.html">189: LG S. 151-153+A</option>
+					<option value="home190.html">190: LG 151-153+Alola</option>
+					<option value="home191.html">191: LG S. 121-150</option>
+					<option value="home192.html">192: LG 121-150</option>
+					<option value="home193.html">193: LG S. 91-120</option>
+					<option value="home194.html">194: LG 91-120</option>
+					<option value="home195.html">195: LG S. 61-90</option>
+					<option value="home196.html">196: LG 61-90</option>
+					<option value="home197.html">197: LG S. 31-60</option>
+					<option value="home198.html">198: LG 31-60</option>
+					<option value="home199.html">199: LG S. 1-30</option>
+					<option value="home200.html">200: LG  1-30</option>
+				</optgroup>
+			</select>
+			<input type=button value="GO" onclick="goToNewPage()" />
+			<button type="button" onclick="goNext()">NEXT</button>
+		</form>
+		<!-- End Navigation -->
+	
+		<table>
+			<caption>HOME 63: Shiny 901-</caption>
+			<tr align="center">
+				<td width="50"></td>
+				<td width="150">901	Ursaluna</td>
+				<td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/901.png" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150">902	Basculegion</td>
+				<td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/902.png" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150">903	Sneasler</td>
+				<td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/903.png" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150">904	Overqwil</td>
+				<td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/904.png" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150">905	Enamorus</td>
+				<td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/905.png" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+			</tr>
+			<tr align="center">
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+			</tr>
+			<tr align="center">
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+			</tr>
+			<tr align="center">
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+			</tr>
+			<tr align="center">
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150"></td>
+				<td><img src="" width="50" height="50"></td>
+			</tr>
+		</table>		
+	</body>
+</html>
