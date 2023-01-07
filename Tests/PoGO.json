@@ -7333,8 +7333,8 @@
 			"region": "Kalos",
 			"available": true,
 			"release": "2020-12-2",
-			"shiny_available": false,
-			"shiny_release": null,
+			"shiny_available": true,
+			"shiny_release": "2023-1-7",
 			"shadow_available": false,
 			"shadow_release": null
 		},
@@ -7344,8 +7344,8 @@
 			"region": "Kalos",
 			"available": true,
 			"release": "2020-12-2",
-			"shiny_available": false,
-			"shiny_release": null,
+			"shiny_available": true,
+			"shiny_release": "2023-1-7",
 			"shadow_available": false,
 			"shadow_release": null
 		},
@@ -7355,8 +7355,8 @@
 			"region": "Kalos",
 			"available": true,
 			"release": "2020-12-2",
-			"shiny_available": false,
-			"shiny_release": null,
+			"shiny_available": true,
+			"shiny_release": "2023-1-7",
 			"shadow_available": false,
 			"shadow_release": null
 		},
