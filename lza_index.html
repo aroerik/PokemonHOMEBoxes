@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			* {box-sizing: border-box;}
+			
+			table, th, td {		
+				border: 2px solid black;
+				border-collapse: collapse;
+			}
+		
+			#dex {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				height: 300px;
+				width; 100px;
+				overflow: scroll;
+			}
+			#dexInput {
+				padding: 0;
+				width: 15%;
+			}
+		</style>
+		<script>
+			function goToNewPage() {
+				var url = document.getElementById('list').value;
+				if(url != 'none') {
+					window.location = url;
+				}
+			}
+			
+			function goHome() {window.location = "index.html";}
+			
+			function goNext() {window.location = "#";}
+			
+			function goPrev() {window.location = "#";}
+			
+			function myFunction() {
+				var input, filter, ul, li, a, i, txtValue;
+				input = document.getElementById("dexInput");
+				filter = input.value.toUpperCase();
+				ul = document.getElementById("dex");
+				li = ul.getElementsByTagName("li");
+				for (i = 0; i < li.length; i++) {
+					a = li[i].getElementsByTagName("a")[0];
+					txtValue = a.textContent || a.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						li[i].style.display = "";
+					} else {
+						li[i].style.display = "none";
+					}
+				}
+			}
+		</script>
+	</head>
+	
+	<title>Pok&eacute;mon Legends: Z-A Box Organization</title>
+	
+	<body>
+		<!-- LEGENDS: Arceus Navigation -->
+		<form>
+			<select name="zaBoxes" id="laList" accesskey="target">
+				<option value='none' selected>Pok&eacute;mon Legends: Arceus Boxes...</option>
+				<option value="lza1.html">1: Move Box</option>
+				<option value="lza2.html">2: 1-30</option>
+				
+				<optgroup label="Empty Boxes">
+					<option value="homeNULL.html">poot: Empty</option>
+				</optgroup>
+				
+				<optgroup label="Regionals and Variants">
+					<option value="lzaXX.html">XX: Variants 1</option>
+				</optgroup>
+			</select>
+			<input type=button value="GO" onclick="goToNewPage()" />
+		</form>
+		<!-- End LEGENDS: Arceus Navigation -->
+		
+		<input type="text" id="dexInput" onkeyup="myFunction()" placeholder="Filter..." title="Filter">
+		<ul id="dex">
+			<li><a href="lza2.html">#001	Rowlet</a> (<a href="lza3.html">shiny</a>)
+			<li><a href="lza2.html">#002	Dartrix</a> (<a href="lza3.html">shiny</a>)
+		</ul>
+	</body>
+</html>
