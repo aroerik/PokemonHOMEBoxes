@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			* {box-sizing: border-box;}
+			
+			table, th, td {		
+				border: 2px solid black;
+				border-collapse: collapse;
+			}
+
+			#dex {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				height: 300px;
+				width; 100px;
+				overflow: scroll;
+			}
+			#dexInput {
+				padding: 0;
+				width: 15%;
+			}
+		</style>
+		<script>
+			function goToNewPage() {
+				var url = document.getElementById('list').value;
+				if(url != 'none') {
+					window.location = url;
+				}
+			}
+			
+			function goHome() {window.location = "la_index.html";}
+			
+			function goPrev() {window.location = "la21.html";}
+			
+			function goNext() {window.location = "la1.html";}
+			
+			function myFunction() {
+				var input, filter, ul, li, a, i, txtValue;
+				input = document.getElementById("myInput");
+				filter = input.value.toUpperCase();
+				ul = document.getElementById("dex");
+				li = ul.getElementsByTagName("li");
+				for (i = 0; i < li.length; i++) {
+					a = li[i].getElementsByTagName("a")[0];
+					txtValue = a.textContent || a.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						li[i].style.display = "";
+					} else {
+						li[i].style.display = "none";
+					}
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+		<!-- Navigation -->
+		<form>
+			<button type="button" onclick="goPrev()">PREV</button>
+			<button type="button" onclick="goHome()">HOME</button>
+			<select name="boxes" id="list" accesskey="target">
+				<option value='none' selected>Pok&eacute;mon Legends: Arceus Boxes...</option>
+				<option value="la1.html">1: Move Box</option>
+				<option value="la2.html">2: 1-30</option>
+				<option value="la3.html">3: Shiny 1-30</option>
+				<option value="la4.html">4: 31-60</option>
+				<option value="la5.html">5: Shiny 31-60</option>
+				<option value="la6.html">6: 61-90</option>
+				<option value="la7.html">7: Shiny 61-90</option>
+				<option value="la8.html">8: 91-120</option>
+				<option value="la9.html">9: Shiny 91-120</option>
+				<option value="la10.html">10: 121-150</option>
+				<option value="la11.html">11: Shiny 121-150</option>
+				<option value="la12.html">12: 151-180</option>
+				<option value="la13.html">13: Shiny 151-180</option>
+				<option value="la14.html">14: 181-210</option>
+				<option value="la15.html">15: Shiny 181-210</option>
+				<option value="la16.html">16: 211-240</option>
+				<option value="la17.html">17: Shiny 211-240</option>
+				<option value="la18.html">18: 241-242+Unown</option>
+				<option value="la19.html">19: S. 241-242+Unown</option>
+				<option value="la20.html">20: Variants</option>
+				<option value="la21.html">21: Shiny Variants
+				
+				<optgroup label="Empty Boxes">
+					<option value="laNULL.html">22-31: Empty</option>
+				</optgroup>
+			</select>
+			<input type=button value="GO" onclick="goToNewPage()" />
+			<button type="button" onclick="goNext()">NEXT</button>
+		</form>
+		<!-- End Navigation -->
+	
+		<table>
+			<caption>Legends Arceus 2: 1-30</caption>
+			<tr align="center">
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+			</tr>
+			<tr align="center">
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+			</tr>
+			<tr align="center">
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+			</tr>
+			<tr align="center">
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+			</tr>
+			<tr align="center">
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+				<td width="50"></td>
+				<td width="150" align="left"></td>
+				<td><img src="" width="50" height="50"></td>
+			</tr>
+		</table>		
+	</body>
+</html>
