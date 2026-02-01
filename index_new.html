@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			* {box-sizing: border-box;}
+			
+			table, th, td {		
+				border: 2px solid black;
+				border-collapse: collapse;
+			}
+		
+			#dex {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				height: 300px;
+				width; 100px;
+				overflow: scroll;
+			}
+			#dexInput {
+				padding: 0;
+				width: 15%;
+			}
+		</style>
+		<script>
+			function goToNewPage() {
+				var url = document.getElementById('list').value;
+				if(url != 'none') {
+					window.location = url;
+				}
+			}
+			
+			function goHome() {window.location = "index.html";}
+			
+			function goNext() {window.location = "#";}
+			
+			function goPrev() {window.location = "#";}
+			
+			function myFunction() {
+				var input, filter, ul, li, a, i, txtValue;
+				input = document.getElementById("dexInput");
+				filter = input.value.toUpperCase();
+				ul = document.getElementById("dex");
+				li = ul.getElementsByTagName("li");
+				for (i = 0; i < li.length; i++) {
+					a = li[i].getElementsByTagName("a")[0];
+					txtValue = a.textContent || a.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						li[i].style.display = "";
+					} else {
+						li[i].style.display = "none";
+					}
+				}
+			}
+		</script>
+	</head>
+	
+	<title>Pok&eacute;mon Box Organization</title>
+	
+	<body>
+		<center>
+			<a href="home_index.html"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Pokémon_HOME_icon_Switch.png" height=100 width=100></a> 
+			<a href="la_index.html"><img src="https://archives.bulbagarden.net/media/upload/c/c6/Pokémon_Legends_Arceus_logo.png" height=100 width=136></a> 
+			<a href="lza_index.html"><img src="https://archives.bulbagarden.net/media/upload/f/f7/Pokémon_Legends_Z-A_logo.png" height=100 width=215></a>
+		</center> 
+	</body>
+</html>
